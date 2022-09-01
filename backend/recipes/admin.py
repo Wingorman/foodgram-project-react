@@ -10,6 +10,11 @@ from .models import (
 )
 
 
+class IngredientAmountInLine(admin.TabularInline):
+    model = IngredientAmount
+    extra = 1
+
+
 @admin.register(Tag)
 class TagAdmin(admin.ModelAdmin):
     list_display = ("id", "name", "slug")
@@ -37,6 +42,7 @@ class RecipeAdmin(admin.ModelAdmin):
     list_filter = ("author", "name", "tags")
     search_fields = ("name",)
     empty_value_display = "-пусто-"
+    inlines = [IngredientAmountInLine]
 
     @staticmethod
     def amount_favorites(obj):
