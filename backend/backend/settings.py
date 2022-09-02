@@ -15,13 +15,16 @@ SECRET_KEY = os.getenv(
     default="django-insecure-kialwu9o(&-+_7vo%f@wzda=(rj_^0w)v8bb!h!38d1l8**e^t",
 )
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://*localhost",
     "https://*localhost",
+    "51.250.108.156",
+    "http://*foodgram-wingorman.ddns.net",
+    "http://*foodgram-wingorman.ddns.net",
 ]
 
 
