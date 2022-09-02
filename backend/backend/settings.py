@@ -22,7 +22,6 @@ ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = [
     "http://*localhost",
     "https://*localhost",
-    "51.250.108.156",
     "http://*foodgram-wingorman.ddns.net",
     "http://*foodgram-wingorman.ddns.net",
 ]
