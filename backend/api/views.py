@@ -41,6 +41,9 @@ class TagsViewSet(ReadOnlyModelViewSet):
     permission_classes = (AllowAny,)
     serializer_class = TagSerializer
 
+    def get_paginated_response(self, data):
+        return Response(data)
+
 
 class IngredientsViewSet(ReadOnlyModelViewSet):
     """
@@ -53,6 +56,9 @@ class IngredientsViewSet(ReadOnlyModelViewSet):
     serializer_class = IngredientSerializer
     filter_backends = [IngredientSearchFilter]
     search_fields = ("^name",)
+
+    def get_paginated_response(self, data):
+        return Response(data)
 
 
 class RecipeViewSet(ModelViewSet):
