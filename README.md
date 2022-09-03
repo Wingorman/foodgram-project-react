@@ -1,4 +1,5 @@
 # Foodgram - Продуктовый помощник
+[![Foodgram workflow](https://github.com/Wingorman/foodgram-project-react/actions/workflows/foodgram_workflow.yml/badge.svg)](https://github.com/Wingorman/foodgram-project-react/actions/workflows/foodgram_workflow.yml)
 
 ## Стек технологий
 
