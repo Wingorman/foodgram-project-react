@@ -24,6 +24,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*localhost",
     "http://*foodgram-wingorman.ddns.net",
     "http://*foodgram-wingorman.ddns.net",
+    "http://*51.250.108.156",
 ]
 
 
