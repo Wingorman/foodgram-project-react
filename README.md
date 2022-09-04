@@ -48,24 +48,6 @@ DB_HOST=db
 DB_PORT=5432
 ```
 
-* Перейти в директирию и установить зависимости из файла requirements.txt:
-
-```bash
-cd backend/
-pip install -r requirements.txt
-```
-
-* Выполните миграции:
-
-```bash
-python manage.py migrate
-```
-
-* Запустите сервер:
-```bash
-python manage.py runserver
-```
-
 ## Запуск проекта в Docker контейнере
 * Установите Docker.
 
