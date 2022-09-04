@@ -19,13 +19,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-CSRF_TRUSTED_ORIGINS = [
-    "http://*localhost",
-    "https://*localhost",
-    "http://*foodgram-wingorman.ddns.net",
-    "http://*foodgram-wingorman.ddns.net",
-]
-
 
 INSTALLED_APPS = [
     "django.contrib.admin",
