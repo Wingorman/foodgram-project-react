@@ -19,17 +19,11 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
-# CSRF_TRUSTED_ORIGINS = [
-#    "http://*localhost",
-#    "https://*localhost",
-#    "http://*foodgram-wingorman.ddns.net",
-#    "http://*foodgram-wingorman.ddns.net",
-#    "http://*51.250.108.156",
-# ]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://foodgram-wingorman.ddns.net",
-    "http://51.250.108.156"
+    "http://51.250.108.156",
+    # "http://*localhost",
 ]
 
 INSTALLED_APPS = [
@@ -81,8 +75,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
-# CORS_ORIGIN_ALLOW_ALL = True
-# CORS_URLS_REGEX = r"^/api/.*$"
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_URLS_REGEX = r"^/api/.*$"
 
 # DATABASES = {
 #    "default": {
