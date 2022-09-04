@@ -81,8 +81,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_URLS_REGEX = r"^/api/.*$"
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_URLS_REGEX = r"^/api/.*$"
 
 # DATABASES = {
 #    "default": {
