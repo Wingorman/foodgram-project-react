@@ -22,6 +22,13 @@ services:
     env_file:
       - ./.env
 
+  frontend:
+    image: wingorman/foodgram_frontend:latest
+    volumes:
+      - ../frontend/:/app/result_build/
+    depends_on:
+      - backend
+
   nginx:
     image: nginx:1.19.3
     ports:
@@ -32,14 +39,8 @@ services:
       - media_value:/app/backend_media/
       - ../frontend/build:/usr/share/nginx/html/
       - ../docs:/usr/share/nginx/html/api/docs/
-    restart: always
     depends_on:
       - frontend
-
-  frontend:
-    image: wingorman/foodgram_frontend:latest
-    volumes:
-      - ../frontend/:/app/result_build/
 
 volumes:
   postgres_data:
