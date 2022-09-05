@@ -21,7 +21,7 @@ ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://158.160.4.194",
-    "foodgram-wingorman.sytes.net",
+    "http://foodgram-wingorman.sytes.net",
 ]
 
 INSTALLED_APPS = [
