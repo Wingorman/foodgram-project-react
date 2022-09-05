@@ -8,7 +8,6 @@ load_dotenv(dotenv_path=env_path)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECRET_KEY = ("django-insecure-p7pnwpgt_=51ora-!4id3=iam!%a4$(#vc*d@1y_faj716&_-k")
 
 SECRET_KEY = os.getenv(
     "SECRET_KEY",
@@ -22,7 +21,7 @@ ALLOWED_HOSTS = ["*"]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://158.160.4.194",
-    # "http://*localhost",
+    "foodgram-wingorman.sytes.net",
 ]
 
 INSTALLED_APPS = [
@@ -77,12 +76,6 @@ WSGI_APPLICATION = "backend.wsgi.application"
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_URLS_REGEX = r"^/api/.*$"
 
-# DATABASES = {
-#    "default": {
-#        "ENGINE": "django.db.backends.sqlite3",
-#        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-#    }
-# }
 
 DATABASES = {
     "default": {

@@ -20,7 +20,7 @@ Foodgram это ресурс для публикации рецептов.
 
 ## Домен на сервер
 ```bash
-http://foodgram-wingorman.ddns.net
+http://foodgram-wingorman.sytes.net
 ```
 
 ## Админ для теста на облаке
